@@ -1,0 +1,54 @@
+.user-management-container {
+  padding: 20px;
+}
+
+.search-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  position: relative;
+  min-height: 200px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.status-active {
+  color: #4caf50;
+  font-weight: 500;
+}
+
+.status-inactive {
+  color: #ff9800;
+  font-weight: 500;
+}
+
+.status-suspended {
+  color: #f44336;
+  font-weight: 500;
+}
+
+mat-card-header {
+  margin-bottom: 16px;
+}
+
+mat-card-title {
+  font-size: 20px;
+  color: #333;
+}
+
+.mat-column-actions {
+  width: 80px;
+  text-align: center;
+}
+
+.mat-column-status {
+  width: 100px;
+}
+
+.mat-column-role {
+  width: 100px;
+}

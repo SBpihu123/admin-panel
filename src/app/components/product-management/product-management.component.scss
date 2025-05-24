@@ -1,0 +1,54 @@
+.product-management-container {
+  padding: 20px;
+}
+
+.search-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  position: relative;
+  min-height: 200px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.status-pending {
+  color: #ff9800;
+  font-weight: 500;
+}
+
+.status-approved {
+  color: #4caf50;
+  font-weight: 500;
+}
+
+.status-rejected {
+  color: #f44336;
+  font-weight: 500;
+}
+
+mat-card-header {
+  margin-bottom: 16px;
+}
+
+mat-card-title {
+  font-size: 20px;
+  color: #333;
+}
+
+.mat-column-actions {
+  width: 120px;
+  text-align: center;
+}
+
+.mat-column-price {
+  width: 100px;
+}
+
+.mat-column-status {
+  width: 100px;
+}

@@ -1,1 +1,216 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles only, Material theme is handled by prebuilt theme */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background: #f3f6fb;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f6fb 0%, #e3e0f7 100%);
+}
+
+.status-badge.success { background: #e8f5e9; color: #388e3c; }
+.status-badge.warning { background: #fff3e0; color: #fbc02d; }
+.status-badge.error { background: #ffebee; color: #d32f2f; }
+.status-badge.info { background: #e3f2fd; color: #1976d2; }
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.search-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  position: relative;
+  min-height: 200px;
+  overflow: auto;
+}
+
+.mat-toolbar {
+  background: linear-gradient(90deg, #3f51b5 0%, #e91e63 100%);
+  color: #fff;
+}
+
+.mat-sidenav {
+  background: #fff;
+  border-right: 1px solid #ececec;
+}
+
+.mat-nav-list a.active {
+  background: #ede7f6;
+  color: #3f51b5;
+}
+
+.mat-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 rgba(103,58,183,0.08);
+}
+
+.mat-elevation-z8 {
+  box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+}
+
+.status-completed {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.status-pending {
+  color: #ef6c00;
+  font-weight: 500;
+}
+
+.status-cancelled {
+  color: #c62828;
+  font-weight: 500;
+}
+
+.status-refunded {
+  color: #1565c0;
+  font-weight: 500;
+}
+
+.status-active {
+  color: #2e7d32;
+  font-weight: 500;
+}
+
+.status-inactive {
+  color: #ef6c00;
+  font-weight: 500;
+}
+
+.status-suspended {
+  color: #c62828;
+  font-weight: 500;
+}
+
+mat-card-header {
+  margin-bottom: 16px;
+}
+
+mat-card-title {
+  font-size: 20px;
+}
+
+.mat-column-actions {
+  width: 80px;
+  text-align: center;
+}
+
+.mat-column-status {
+  width: 100px;
+}
+
+.mat-column-role {
+  width: 100px;
+}
+
+.mat-column-amount {
+  width: 100px;
+}
+
+.mat-column-date {
+  width: 120px;
+}
+
+.mat-mdc-card {
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.mat-mdc-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mat-mdc-table th {
+  background-color: #f5f5f5;
+  font-weight: 500;
+  text-align: left;
+  padding: 12px;
+}
+
+.mat-mdc-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Button styles */
+.mat-mdc-button {
+  margin: 0 4px;
+}
+
+/* Form field styles */
+.mat-mdc-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+/* Card styles */
+.mat-mdc-card {
+  padding: 16px;
+}
+
+.mat-mdc-card-header {
+  margin-bottom: 16px;
+}
+
+/* Table styles */
+.mat-mdc-table {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.mat-mdc-paginator {
+  margin-top: 16px;
+}
+
+/* Dialog styles */
+.mat-mdc-dialog-container {
+  padding: 24px;
+}
+
+/* Snackbar styles */
+.mat-mdc-snack-bar-container {
+  &.success {
+    --mdc-snackbar-container-color: #2e7d32;
+    --mat-mdc-snack-bar-button-color: white;
+    --mdc-snackbar-supporting-text-color: white;
+  }
+  
+  &.error {
+    --mdc-snackbar-container-color: #c62828;
+    --mat-mdc-snack-bar-button-color: white;
+    --mdc-snackbar-supporting-text-color: white;
+  }
+  
+  &.warning {
+    --mdc-snackbar-container-color: #ef6c00;
+    --mat-mdc-snack-bar-button-color: white;
+    --mdc-snackbar-supporting-text-color: white;
+  }
+}

@@ -1,59 +1,102 @@
-# AdminPanel
+# Admin Panel
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.13.
+A dynamic admin panel built with Angular and Material UI for managing products, users, and transactions.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- Secure login system
+- Dashboard with key metrics
+- Product management with approval workflow
+- User management with status control
+- Transaction monitoring
+- Responsive design
+- Material UI components
+- Cross-platform compatibility
 
+## Prerequisites
+
+- Node.js (v14 or higher)
+- npm (v6 or higher)
+- Angular CLI (v15 or higher)
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd admin-panel
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+4. Open your browser and navigate to `http://localhost:4200`
 
-## Code scaffolding
+## Project Structure
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── dashboard/
+│   │   ├── login/
+│   │   ├── product-management/
+│   │   ├── transaction-monitoring/
+│   │   └── user-management/
+│   ├── models/
+│   ├── services/
+│   └── shared/
+├── assets/
+└── environments/
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Development
 
+- Run `ng serve` for a dev server
+- Run `ng build` to build the project
+- Run `ng test` to execute unit tests
+- Run `ng e2e` to execute end-to-end tests
+
+## Deployment
+
+1. Build the project:
 ```bash
-ng generate --help
+ng build --configuration production
 ```
 
-## Building
+2. Deploy the contents of the `dist/admin-panel` directory to your hosting service (e.g., Netlify, Vercel, or any static hosting).
 
-To build the project run:
+## Environment Configuration
 
-```bash
-ng build
-```
+The application uses environment files for configuration:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+- `environment.ts` - Development environment
+- `environment.prod.ts` - Production environment
 
-## Running unit tests
+Update the `apiUrl` in these files to point to your backend API.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Security
 
-```bash
-ng test
-```
+- The application implements token-based authentication
+- All API calls are made over HTTPS
+- Sensitive data is stored securely
+- Input validation is implemented throughout the application
 
-## Running end-to-end tests
+## Contributing
 
-For end-to-end (e2e) testing, run:
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
 
-```bash
-ng e2e
-```
+## License
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This project is licensed under the MIT License - see the LICENSE file for details.
